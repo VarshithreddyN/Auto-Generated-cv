@@ -24,14 +24,14 @@
                 <label for="Linkedin">Linkedin:</label>
                 <input type="text" placeholder="Linkedin ID"><br>
                 <label for="Email">Email:</label>
-                <input type="text" placeholder="Enter your Mail ID" size="30"><br>
+                <input type="text" placeholder="Enter your Mail ID" ><br>
                 <fieldset>
                     <legend>Education</legend>
                     <!-- Degree , College , Starting Year , Passing Year , CGPA -->
                     <label for="Degree">Degree:</label>
                         <input type="text" placeholder="Degree"><br>
                         <label for="College">College Name:</label>
-                        <input type="text" placeholder="Enter College Name" size="30"><br>
+                        <input type="text" placeholder="Enter College Name"><br>
                         <label for="Starting Year">Starting Year:</label>
                         <input type="number" placeholder="Starting Year"><br>
                         <label for="Passing Year">Passing Year:</label>
@@ -44,7 +44,7 @@
                     <legend>Skills</legend>
                     <!-- skills -->
                     <label for="Skills" >Skills:</label>
-                    <input type="text" placeholder="Skills like html,css,javascript,nodjs ",rows="3" cols="5", size="38" id="Skills">
+                    <input type="text" placeholder="Skills like html,css,javascript,nodjs ",rows="3" cols="5" id="Skills">
                 </fieldset>
                 <fieldset>
                     <legend>Projects</legend>
@@ -70,29 +70,66 @@
                 </fieldset>
                 <button type="submit" class="btn">submit</button>
                 <button type="reset" class="btn">reset</button>
-                <button class="btn" onclick="handleLeft()"><<</button>
+                <button class="btn" onclick="handleLeft()">View & Print</button>
             </form>
         </div>
-        <div class="right">
-            <div class="block1">
-                <!-- Name -->
-                <!--Email , Phone , Github , Linkedin  -->
-            </div>
-            <div class="block2">
-                <h2>Education</h2>
-            </div>
-            <div class="block3">
-            </div>
-            <div class="block4">
-                <h2>Project</h2>
-            </div>
-            <div class="block5">
-                <h2>Experience</h2>
-            </div>
-            <button class="btn print" onclick="handlePrint()">Print</button>
+       
+    <div class="right">
+        <div class="block1">
+           <p style="font-weight: bold;" id="name-right"></p>
+           <div>
+            <p id="email-right"></p>
+           <p id="phone-right"></p>
+           <p id="git-right"> </p>
+           <p id="linked-right"></p>
         </div>
-    </main>
+        </div>
+        
+        <div class="block2">
+            <h2>Education</h2>
+            <hr class="line">
+            <div class="ed">
+                
+                <p id="college-right" ></p>
+                <p id="degree-right"></p>
+                <div>
+                    <p id="sy-right"></p>
+                    <p id="py-right"></p>
+                </div>
+                <p id="cgpa-right"></p>        
+            </div>
+        </div>
 
+        <div class="block3">
+            <h2>Skills</h2>
+            <hr class="line">
+            
+                <p id="skills-right"></p>
+            
+          <hr class="line">
+        </div>
+        <div class="block4">
+            <h2>Project</h2><hr class="line">
+            <p id="projects-right"></p>
+            <p id="pdescription-right"></p>
+            <p id="link-right"></p>
+          <hr>
+        </div>
+        <div class="block5">
+            <h2>Experience</h2>
+            <hr class="line">
+            <p id="designation-right" ></p>
+            <p id="company-right"></p>
+            <p id="duration-right"></p>
+            <p id="description-right"></p>   
+        </div>
+
+        <button class="btn print" onclick="handlePrint()">Print</button>
+    </div>
+</main>
     <script src="./app.js"></script>
 </body>
 </html>
+
+
+
