@@ -36,6 +36,7 @@ main>.left{
     align-items: flex-start;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
+    
 }
 main>.left legend{
     color: black;
@@ -80,7 +81,7 @@ main>.right>.block1{
     width: 60vw;
 }
 .print{
-    display: blue;
+    display: none;
 }
 
 .box{
@@ -89,7 +90,12 @@ main>.right>.block1{
     border: 15px;
     align-items: flex-end;
     padding-right: 20px;
+    padding: 7px;
 }
+/* .form{
+    align-items: center;
+} */
+
 label {
     display: inline-block;
     width: 150px;
@@ -98,13 +104,12 @@ label {
   h2{
     color: darkgray;
   }
-  .ed
-  {
+  .ed{
     display: flex;
     flex-direction: column;
   } 
-  .line
-  {
+  .line{
     width: 65vw;
-    color:solid black; 
+    color:solid black;
+    /* height: 1px; */
   }
